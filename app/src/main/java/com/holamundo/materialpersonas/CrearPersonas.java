@@ -57,4 +57,16 @@ public class CrearPersonas extends AppCompatActivity {
         Snackbar.make(v, getResources().getString(R.string.guardado_exitoso), Snackbar.LENGTH_SHORT)
               .setAction("Action", null).show();
     }
+
+    public void limpiar(View v){
+        limpiar();
+    }
+
+    public void limpiar(){
+        txtCedula.setText("");
+        txtNombre.setText("");
+        txtApellido.setText("");
+        cmbSexo.setSelection(0);
+        txtCedula.requestFocus();
+    }
 }
