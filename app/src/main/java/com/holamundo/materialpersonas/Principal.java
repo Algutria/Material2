@@ -44,8 +44,10 @@ public class Principal extends AppCompatActivity {
     }
 
     public void crearPersonas(View v){
-        Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
+        i = new Intent(Principal.this, CrearPersonas.class);
+        startActivity(i);
+        //Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+          //      .setAction("Action", null).show();
     }
 
 
