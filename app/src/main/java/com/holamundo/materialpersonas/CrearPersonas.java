@@ -1,5 +1,6 @@
 package com.holamundo.materialpersonas;
 
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,7 +43,7 @@ public class CrearPersonas extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        String cedula, nombre, apellido;
+        String cedula, nombre, apellido, id;
         Integer sexo, foto;
 
         foto = Datos.fotoAleatoria(fotos);
@@ -50,12 +51,15 @@ public class CrearPersonas extends AppCompatActivity {
         nombre = txtNombre.getText().toString();
         apellido = txtApellido.getText().toString();
         sexo = cmbSexo.getSelectedItemPosition();
+        id = Datos.getId();
 
-        Persona persona = new Persona(foto, cedula, nombre, apellido, sexo);
+        Persona persona = new Persona(id, foto, cedula, nombre, apellido, sexo);
         persona.guardar();
 
         Snackbar.make(v, getResources().getString(R.string.guardado_exitoso), Snackbar.LENGTH_SHORT)
               .setAction("Action", null).show();
+
+        limpiar();
     }
 
     public void limpiar(View v){
@@ -68,5 +72,11 @@ public class CrearPersonas extends AppCompatActivity {
         txtApellido.setText("");
         cmbSexo.setSelection(0);
         txtCedula.requestFocus();
+    }
+
+    public void onBackPressed(){
+        finish();
+        Intent i = new Intent(CrearPersonas.this, Principal.class);
+        startActivity(i);
     }
 }

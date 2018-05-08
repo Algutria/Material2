@@ -30,10 +30,8 @@ public class Principal extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         lstOpciones = findViewById(R.id.lstOpciones);
-        personas = new ArrayList();
-        personas.add(new Persona(R.drawable.images,"1140439156","Raul","Castro",1));
-        personas.add(new Persona(R.drawable.images2,"1140439157","Manuel","Perez",1));
-        personas.add(new Persona(R.drawable.images3,"1140439456","Sergio","Ramos",1));
+        personas = Datos.obtener();
+
 
         llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);

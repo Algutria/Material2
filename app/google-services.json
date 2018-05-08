@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337778450911",
+    "firebase_url": "https://materialpersonas-54a80.firebaseio.com",
+    "project_id": "materialpersonas-54a80",
+    "storage_bucket": "materialpersonas-54a80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337778450911:android:806302382d4dd633",
+        "android_client_info": {
+          "package_name": "com.holamundo.materialpersonas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337778450911-1i0l2rrfid964i4bm898tmf5ngbtotq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.holamundo.materialpersonas",
+            "certificate_hash": "4926caa21bffb8f53144cd5ac532fafcf118ae45"
+          }
+        },
+        {
+          "client_id": "337778450911-dtc3tese4kgd1f4k5u2h1e079h142b0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsUHXesOutCz-D20poLvSNo5YYjHgCNXg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337778450911-dtc3tese4kgd1f4k5u2h1e079h142b0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
